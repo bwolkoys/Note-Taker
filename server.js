@@ -4,9 +4,17 @@ const express = require('express')
 // Sequelize model- the uuid package allows me to generate unique identifiers for each note
 const { Model, DataTypes } = require('sequelize');
 const { v4: uuidv4 } = require('uuid');
-const db = require('./db/db.json')
+const db = require('./Develop/db/db.json');
 
 const app = express()
+
+//Tutor said public folder may be blocked, this will unblock it
+app.use(express.static('public'));
+//Middleware
+app.use(express.urlencoded({extended:true}));
+app.use(express.json());
+
+
 //routes to API - used GET
 app.get('api/notes', (req, res) => {
     fs.readFile('./db/db.json', (err, data) => {
@@ -15,6 +23,7 @@ app.get('api/notes', (req, res) => {
         res.json(dataDb)
     });
 });
+
 
 //using POST
 app.post('/api/notes', (req, res) => {
@@ -35,17 +44,18 @@ app.delete('/api/notes/:id', (req, res) => {
 
 const PORT = process.env.PORT || 3000
 
+
 // routes (html)
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'index.html'))
+    res.sendFile(path.join(__dirname, '../public/index.html'))
 });
 
 app.get('/notes', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'notes.html'))
+    res.sendFile(path.join(__dirname, '../public/notes.html'))
 });
 
 app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'index.html'))
+    res.sendFile(path.join(__dirname, '../public/index.html'))
 });
 
-app.listen(PORT, () => console.log(`App is listening on ${PORT}`));
+app.listen(PORT, () => console.log(`App is listening on PORT ${PORT}`)); 
