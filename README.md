@@ -23,3 +23,7 @@
 ## Resources 
 
 - Tutor said to use sequilize. here is documentation I used: https://sequelize.org/docs/v6/core-concepts/model-basics/ 
+- https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods 
+- POST: https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST 
+- DELETE: https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/DELETE 
+- path.join(): https://nodejs.org/api/path.html#pathjoinpaths 
