@@ -21,3 +21,5 @@
 - THEN I am presented with empty fields to enter a new note title and the note’s text in the right-hand column and the button disappears
 
 ## Resources 
+
+- Tutor said to use sequilize. here is documentation I used: https://sequelize.org/docs/v6/core-concepts/model-basics/ 
