@@ -27,3 +27,9 @@
 - POST: https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST 
 - DELETE: https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/DELETE 
 - path.join(): https://nodejs.org/api/path.html#pathjoinpaths 
+
+## Sreenshots 
+
+<img width="1360" alt="Screenshot 2024-09-16 at 2 04 56 PM" src="https://github.com/user-attachments/assets/edf265e3-13af-41e9-ba6c-d55d5d447934">
+
+<img width="1359" alt="Screenshot 2024-09-16 at 2 03 38 PM" src="https://github.com/user-attachments/assets/c0a00b3b-24ad-41bb-9ccc-6063dc9e3510">
