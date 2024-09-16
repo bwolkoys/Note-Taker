@@ -1,5 +1,9 @@
 # Note Taker Starter Code
 
+## Description
+This project is a note taking applicaiton that uses node.js and express. To use the application, title the note, add the text, click save button, and that's it! 
+
+
 ## User Story
 - AS A small business owner
 - I WANT to be able to write and save notes
